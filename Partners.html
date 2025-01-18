@@ -24,12 +24,6 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   <style>
-    /* Ensure the image scales properly and maintains aspect ratio */
-    .pattern-logo {
-      max-width: 100%;
-      height: auto;
-      display: inline-block;
-    }
     .clients {
         display: flex;
         flex-wrap: wrap;
@@ -39,10 +33,12 @@
         flex: 1 1 21%; /* adjust the value as needed */
         margin: 10px;
         text-align: center;
+        box-sizing: border-box;
     }
     .clients .client-logo img {
         max-width: 100%;
         height: auto;
+        object-fit: contain;
     }
   </style>
 </head>
@@ -88,37 +84,37 @@
   <!-- clients -->
   <section class="clients">
     <div class="client-logo">
-      <img src="hik-vision.png" alt="Pattern Logo" class="pattern-logo">
+      <img src="hik-vision.png" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="dahua.png" alt="Pattern Logo" class="pattern-logo">
+      <img src="dahua.png" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="imou.webp" alt="Pattern Logo" class="pattern-logo">
+      <img src="imou.webp" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="tp-link.png" alt="Pattern Logo" class="pattern-logo">
+      <img src="tp-link.png" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="hifocus.webp" alt="Pattern Logo" class="pattern-logo">
+      <img src="hifocus.webp" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="cp-plus.png" alt="Pattern Logo" class="pattern-logo">
+      <img src="cp-plus.png" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="d-link.svg" alt="Pattern Logo" class="pattern-logo">
+      <img src="d-link.svg" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="essl.png" alt="Pattern Logo" class="pattern-logo">
+      <img src="essl.png" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="multi.png" alt="Pattern Logo" class="pattern-logo">
+      <img src="multi.png" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="honewell.png" alt="Pattern Logo" class="pattern-logo">
+      <img src="honewell.png" alt="Pattern Logo">
     </div>
     <div class="client-logo">
-      <img src="seagate.jpg" alt="Pattern Logo" class="pattern-logo">
+      <img src="seagate.jpg" alt="Pattern Logo">
     </div>
   </section>
   <!-- end clients -->
