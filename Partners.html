@@ -24,22 +24,31 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   <style>
+    .clients-wrapper {
+        overflow: hidden;
+        white-space: nowrap;
+    }
     .clients {
         display: flex;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        overflow-x: auto; /* Ensures the logos are scrollable horizontally if they overflow */
+        animation: scroll 10s linear infinite;
     }
     .clients .client-logo {
-        flex: 0 0 auto; /* Prevents the logos from shrinking or growing */
+        flex: 0 0 auto;
         margin: 10px;
         text-align: center;
         box-sizing: border-box;
     }
     .clients .client-logo img {
-        height: 100px; /* Fixed height for uniform size */
+        height: 100px;
         object-fit: contain;
+    }
+    @keyframes scroll {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
     }
   </style>
 </head>
@@ -83,41 +92,78 @@
     <!-- end header -->
   </div>
   <!-- clients -->
-  <section class="clients">
-    <div class="client-logo">
-      <img src="hik-vision.png" alt="Hikvision">
-    </div>
-    <div class="client-logo">
-      <img src="dahua.png" alt="Dahua">
-    </div>
-    <div class="client-logo">
-      <img src="imou.webp" alt="Imou">
-    </div>
-    <div class="client-logo">
-      <img src="tp-link.png" alt="TP-Link">
-    </div>
-    <div class="client-logo">
-      <img src="hifocus.webp" alt="Hifocus">
-    </div>
-    <div class="client-logo">
-      <img src="cp-plus.png" alt="CP Plus">
-    </div>
-    <div class="client-logo">
-      <img src="d-link.svg" alt="D-Link">
-    </div>
-    <div class="client-logo">
-      <img src="essl.png" alt="Essl">
-    </div>
-    <div class="client-logo">
-      <img src="multi.png" alt="Multi">
-    </div>
-    <div class="client-logo">
-      <img src="honewell.png" alt="Honeywell">
-    </div>
-    <div class="client-logo">
-      <img src="seagate.jpg" alt="Seagate">
-    </div>
-  </section>
+  <div class="clients-wrapper">
+    <section class="clients">
+      <div class="client-logo">
+        <img src="hik-vision.png" alt="Hikvision">
+      </div>
+      <div class="client-logo">
+        <img src="dahua.png" alt="Dahua">
+      </div>
+      <div class="client-logo">
+        <img src="imou.webp" alt="Imou">
+      </div>
+      <div class="client-logo">
+        <img src="tp-link.png" alt="TP-Link">
+      </div>
+      <div class="client-logo">
+        <img src="hifocus.webp" alt="Hifocus">
+      </div>
+      <div class="client-logo">
+        <img src="cp-plus.png" alt="CP Plus">
+      </div>
+      <div class="client-logo">
+        <img src="d-link.svg" alt="D-Link">
+      </div>
+      <div class="client-logo">
+        <img src="essl.png" alt="Essl">
+      </div>
+      <div class="client-logo">
+        <img src="multi.png" alt="Multi">
+      </div>
+      <div class="client-logo">
+        <img src="honewell.png" alt="Honeywell">
+      </div>
+      <div class="client-logo">
+        <img src="seagate.jpg" alt="Seagate">
+      </div>
+    </section>
+    <section class="clients">
+      <div class="client-logo">
+        <img src="hik-vision.png" alt="Hikvision">
+      </div>
+      <div class="client-logo">
+        <img src="dahua.png" alt="Dahua">
+      </div>
+      <div class="client-logo">
+        <img src="imou.webp" alt="Imou">
+      </div>
+      <div class="client-logo">
+        <img src="tp-link.png" alt="TP-Link">
+      </div>
+      <div class="client-logo">
+        <img src="hifocus.webp" alt="Hifocus">
+      </div>
+      <div class="client-logo">
+        <img src="cp-plus.png" alt="CP Plus">
+      </div>
+      <div class="client-logo">
+        <img src="d-link.svg" alt="D-Link">
+      </div>
+      <div class="client-logo">
+        <img src="essl.png" alt="Essl">
+      </div>
+      <div class="client-logo">
+        <img src="multi.png" alt="Multi">
+      </div>
+      <div class="client-logo">
+        <img src="honewell.png" alt="Honeywell">
+      </div>
+      <div class="client-logo">
+        <img src="seagate.jpg" alt="Seagate">
+      </div>
+    </section>
+  </div>
   <!-- end clients -->
   <!-- footer -->
   <footer>
