@@ -26,18 +26,19 @@
   <style>
     .clients {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-around;
+        align-items: center;
+        overflow-x: auto; /* Ensures the logos are scrollable horizontally if they overflow */
     }
     .clients .client-logo {
-        flex: 1 1 21%; /* adjust the value as needed */
+        flex: 0 0 auto; /* Prevents the logos from shrinking or growing */
         margin: 10px;
         text-align: center;
         box-sizing: border-box;
     }
     .clients .client-logo img {
-        max-width: 100%;
-        height: auto;
+        height: 100px; /* Fixed height for uniform size */
         object-fit: contain;
     }
   </style>
@@ -84,37 +85,37 @@
   <!-- clients -->
   <section class="clients">
     <div class="client-logo">
-      <img src="hik-vision.png" alt="Pattern Logo">
+      <img src="hik-vision.png" alt="Hikvision">
     </div>
     <div class="client-logo">
-      <img src="dahua.png" alt="Pattern Logo">
+      <img src="dahua.png" alt="Dahua">
     </div>
     <div class="client-logo">
-      <img src="imou.webp" alt="Pattern Logo">
+      <img src="imou.webp" alt="Imou">
     </div>
     <div class="client-logo">
-      <img src="tp-link.png" alt="Pattern Logo">
+      <img src="tp-link.png" alt="TP-Link">
     </div>
     <div class="client-logo">
-      <img src="hifocus.webp" alt="Pattern Logo">
+      <img src="hifocus.webp" alt="Hifocus">
     </div>
     <div class="client-logo">
-      <img src="cp-plus.png" alt="Pattern Logo">
+      <img src="cp-plus.png" alt="CP Plus">
     </div>
     <div class="client-logo">
-      <img src="d-link.svg" alt="Pattern Logo">
+      <img src="d-link.svg" alt="D-Link">
     </div>
     <div class="client-logo">
-      <img src="essl.png" alt="Pattern Logo">
+      <img src="essl.png" alt="Essl">
     </div>
     <div class="client-logo">
-      <img src="multi.png" alt="Pattern Logo">
+      <img src="multi.png" alt="Multi">
     </div>
     <div class="client-logo">
-      <img src="honewell.png" alt="Pattern Logo">
+      <img src="honewell.png" alt="Honeywell">
     </div>
     <div class="client-logo">
-      <img src="seagate.jpg" alt="Pattern Logo">
+      <img src="seagate.jpg" alt="Seagate">
     </div>
   </section>
   <!-- end clients -->
